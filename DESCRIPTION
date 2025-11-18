@@ -1,0 +1,25 @@
+Package: m6APrediction
+Type: Package
+Title: Prediction of m6A RNA Methylation Sites Using Random Forest Models
+Version: 1.0.0
+Authors@R: 
+    person("Yunwei", "Wang", 
+           email = "Yunwei.Wang23@student.xjtlu.edu.cn", 
+           role = c("aut", "cre"))
+Description: 
+    The m6APrediction package provides functions to identify N6-methyladenosine (m6A) 
+    modification sites from nucleotide sequences using a Random Forest classifier. 
+    It includes tools for DNA 5-mer encoding, single-site and batch prediction, 
+    and integrates a pre-trained model to facilitate rapid epigenetic feature screening 
+    in RNA-related studies.
+License: MIT + file LICENSE
+URL: https://github.com/yourname/m6APrediction
+BugReports: https://github.com/yourname/m6APrediction/issues
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    randomForest,
+    dplyr,
+    ggplot2
+RoxygenNote: 7.3.3
+Encoding: UTF-8
