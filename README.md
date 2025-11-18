@@ -26,9 +26,10 @@ remotes::install_github("yourname/m6APrediction")
 # Load example model and data
 model <- readRDS(system.file("extdata", "rf_fit.rds", package = "m6APrediction"))
 example_input <- read.csv(system.file("extdata", "m6A_input_example.csv", package = "m6APrediction"))
-
+```
 
 ## 📦 Example Usage
+```r
 # --- 1️⃣ Batch prediction ---
 results <- prediction_multiple(model, example_input)
 head(results)
@@ -45,6 +46,6 @@ single_result <- prediction_single(
   DNA_5mer = "GGACA"
 )
 print(single_result)
-
+```
 ![ROC Curve](inst/figures/roc_curve.png)
 
